@@ -1,0 +1,40 @@
+{
+  "name": "mdavid-dev/maker-ddd-bundle",
+  "description": "Maker DDD Bundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "prefer-stable": true,
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "symfony/maker-bundle": "^1.44",
+    "brianium/paratest": "^6.4",
+    "symfony/phpunit-bridge": "^5.4|^6.2|^6.4",
+    "symfony/yaml": "^5.4|^6.2|^6.4",
+    "symfony/console": "^5.4|^6.2|^6.4",
+    "symfony/filesystem": "^5.4|^6.2|^6.4",
+    "api-platform/core": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "MDD\\MakerDddBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MDD\\MakerDddBundle\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true,
+    "allow-plugins": {
+      "symfony/flex": true
+    }
+  }
+}

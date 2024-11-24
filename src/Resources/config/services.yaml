@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    MDD\MakerDddBundle\:
+        resource: '../../*'
+        exclude: '../../{DependencyInjection,translations,Resources,Factory,Constante,Services,Tests,MakerDddBundle.php}'
